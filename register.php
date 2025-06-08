@@ -6,11 +6,18 @@
     <title>Auth</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"
+
 </head>
 <body>
     <div class="Container">
 
-        <form action="registration.php" method="Post">
+        <?php 
+            print_r($_POST) 
+            
+        ?>
+
+        <form action="register.php" method="Post">
+            
             <div class="form-group">
                 <input type="text" class="form-control" name="fullname" placeholder="Enter your Full name"><br>
                 <input type="email" class="form-control" name="email" placeholder="Enter Email"><br>
