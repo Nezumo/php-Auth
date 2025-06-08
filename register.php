@@ -22,13 +22,13 @@
                 if (empty($fullname) OR empty($email) OR empty($password) OR empty($repeat_password)){
                     array_push($errors, "Full information required!");
                 } 
-                else if(!filter_var($email, FILTER_VALIDATE)){
+                if(filter_var($email, FILTER_VALIDATE_EMAIL)){
                     array_push($errors, "Email is not valid");
                 } 
-                else if (strlen($password) < 8){
+                if (strlen($password) < 8){
                     array_push($errors, "Password must be at least 8 characters long");
                 } 
-                else if ($password != $repeat_password){
+                if ($password != $repeat_password){
                     array_push($errors, "not the same Passwords");
                 }
 
@@ -52,7 +52,7 @@
                 <input type="password" class="form-control" name="repeat_password" placeholder="repeat Password"><br>
             </div>
             <div class="form-btn">
-                <input type="submit" class="btn btn-primary" value="register">
+                <input type="submit" name="submit" class="btn btn-primary" value="register">
             </div>
         </form>
 
