@@ -55,6 +55,8 @@
                 <input type="password" placeholder="enter password"  name="password" class="form-control"><br>
                 
                 <input type="submit" value="login" name="login" class="btn btn-primary">
+
+                <p>Not registered yet?<a href="register.php"> Register Here</a> </p>
             </div>
 
         </form>

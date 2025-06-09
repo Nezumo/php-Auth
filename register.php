@@ -74,6 +74,8 @@
             </div>
             <div class="form-btn">
                 <input type="submit" name="submit" class="btn btn-primary" value="register">
+
+                <p>Already have an Account?<a href="Login.php" > Login Here</a></p>
             </div>
         </form>
 
